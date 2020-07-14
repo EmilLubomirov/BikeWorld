@@ -20,15 +20,15 @@
 
 title: Bike World
 email: demo@email.com
-description: Site related to bikes using HTML&CSS
+description: Site related to bikes using Jekyll and HTML&CSS
 destination: docs
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/BikeWorld" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 
