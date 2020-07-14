@@ -1,0 +1,38 @@
+$delay: 0.15s;
+
+.nav {
+
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 40%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+
+      transform: translateY(-100px);
+      transition: transform 0.8s ease-in-out;
+
+      @for $i from 1 through 5{
+        &:nth-child(0n + #{$i}){
+          transition-delay: $i * $delay;
+        }
+      }
+    }
+  }
+
+  a {
+    color: var(--nav-color);
+    text-decoration: none;
+  }
+}
+
+.page-title-bicycles:before{
+  content: '\f84a';
+}

@@ -10,7 +10,9 @@
         {% endif %}
     </title>
     <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
-    <!--    <link rel="stylesheet" href="{{site.baseurl}}//use.fontawesome.com/releases/v5.0.7/css/all.css">-->
+    <link rel="icon" href="{{site.baseurl}}/images/site-logo.png">
+    <link rel="stylesheet" href="{{site.baseurl}}//use.fontawesome.com/releases/v5.0.7/css/all.css">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 </head>
 
 <script>
@@ -21,19 +23,21 @@
 
 <body>
 <!--<input type="checkbox" id="input-checkbox" class="input-checkbox">-->
+<i class="fas fa-biking"></i>
 
 <header class="site-header">
+    {% include site-logo.html location ="header" %}
     {% include navigation.html location="header" %}
 </header>
 
-<div class="site">
+<main class="site-main">
     {% if page.title and page.title != 'Home' %}
     <h1 class="page-title">{{page.title}}</h1>
     {% endif %}
     <div class="page-content">
         {{content}}
     </div>
-</div>
+</main>
 
 <footer class="site-footer">
     All rights reserved 2019 &copy;</footer>

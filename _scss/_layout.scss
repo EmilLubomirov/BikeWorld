@@ -1,0 +1,32 @@
+.loaded{
+  header {
+    li{
+      transform: translateY(0);
+    }
+  }
+}
+header{
+  display: flex;
+  font-size: var(--header-font-size);
+  justify-content: space-between;
+  background-color: var(--header-background-color, #000);
+  height: 120px;
+
+  .site-logo{
+
+    position: relative;
+    width: 15%;
+
+    img{
+      height: 100%;
+    }
+
+    a {
+      position: absolute;
+      top: 13px;
+      left: 30px;
+      display: inline-block;
+      height: 80%;
+    }
+  }
+}

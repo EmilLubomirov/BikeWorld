@@ -6,7 +6,7 @@
         {% for current-page in pages %}
         {% if current-page.title %}
         <li>
-            <a class="nav-links page-title-{{ current-page.title | slugify }}
+            <a class="nav-links page-title-{{ current-page.title-en | slugify }}
                                         {%if current-page.url == page.url %}active{% endif %}"
                href="{{site.baseurl}}{{current-page.url}}">{{current-page.title}}
             </a>
