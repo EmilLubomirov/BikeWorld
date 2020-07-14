@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac0a5d4-339b-43e0-b7e7-48ab1b186c5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,8 @@
         <option value="JavaScript File" />
         <option value="package.json" />
         <option value="HTML File" />
+        <option value="Sass File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -34,6 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="ServiceViewManager">
@@ -58,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594718450678</updated>
-      <workItem from="1594718452147" duration="1898000" />
+      <workItem from="1594718452147" duration="3044000" />
     </task>
     <servers />
   </component>
