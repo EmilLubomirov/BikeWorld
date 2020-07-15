@@ -7,13 +7,15 @@
       <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/bicycles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bicycles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contacts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594718450678</updated>
-      <workItem from="1594718452147" duration="13662000" />
+      <workItem from="1594718452147" duration="13760000" />
+      <workItem from="1594804663699" duration="14589000" />
     </task>
     <servers />
   </component>

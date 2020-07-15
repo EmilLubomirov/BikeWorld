@@ -7,7 +7,11 @@ $delay: 0.15s;
   top: 50px;
   width: 40%;
 
-  ul {
+  ul{
+    list-style: none;
+  }
+
+  & > ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -15,7 +19,6 @@ $delay: 0.15s;
     margin: 0;
 
     li{
-
       transform: translateY(-100px);
       transition: transform 0.8s ease-in-out;
 
@@ -30,9 +33,84 @@ $delay: 0.15s;
   a {
     color: var(--nav-color);
     text-decoration: none;
+    display: inline-block;
+    //padding: 10px;
+    transition: transform 0.6s ease-in-out,
+            background-color 0.5s ease-in-out;
+
+    &:hover{
+      //background: #ffc89a;
+      transform: scale(1.15);
+      border-radius: 5px;
+
+    }
   }
 }
 
-.page-title-bicycles:before{
-  content: '\f84a';
+.bicycles-item{
+
+  ul {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+    padding: 10px;
+    //padding-left: 15px;
+    //padding: 0 20px;
+    background-color: var(--header-background-color);
+
+    li {
+      margin-top: 30px;
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover > ul {
+    opacity: 1;
+    //flex-flow: column;
+    //align-items: center;
+  }
 }
+
+.nav-links:before{
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 900;
+  margin: 0 8px;
+}
+
+//.page-title-bicycles:hover > ul{
+//
+//  opacity: 1;
+//}
+
+.page-title-bicycles:before{
+  content: '\f206';
+}
+
+.page-title-about:before{
+  content: '\f2bb';
+}
+
+.page-title-contacts:before{
+  content: '\f2b9';
+}
+
+.page-title-faqs:before{
+  content: '\f128';
+}
+
+.page-title-mountain:before{
+  content: '\f1bb';
+}
+.page-title-road{
+  padding-bottom: 20px;
+
+  &:before{
+    content: '\f018';
+  }
+}
+
+//.active{
+//  background-color: red;
+//}

@@ -1,3 +1,5 @@
+/*Common*/
+
 .loaded{
   header {
     li{
@@ -5,6 +7,13 @@
     }
   }
 }
+
+.site-main{
+  padding: 30px;
+}
+
+/*HEADER*/
+
 header{
   display: flex;
   font-size: var(--header-font-size);
@@ -15,7 +24,7 @@ header{
   .site-logo{
 
     position: relative;
-    width: 15%;
+    width: 20%;
 
     img{
       height: 100%;
@@ -29,4 +38,62 @@ header{
       height: 80%;
     }
   }
+}
+
+
+/*MOUNTAIN PAGE*/
+.page-main{
+  margin-top: 70px;
+}
+
+.bikes-collection{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+  text-align: center;
+
+  figure{
+    margin: 0;
+  }
+
+  img{
+    max-width: 300px;
+    display: block;
+    transition: filter 0.4s ease-in-out;
+  }
+}
+
+.bike{
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover > .info{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &:hover img{
+    opacity: 0.3;
+    filter: blur(3px);
+  }
+}
+
+.info{
+  position: absolute;
+  transition: transform 1s ease-in-out, opacity 0.7s ease-in-out;
+  transform: translateY(-100px);
+  opacity: 0;
+  font-weight: 600;
+  top: 70px;
+  left: 90px;
+}
+
+.price{
+  font-size: larger;
+  font-weight: 600;
+  color: red;
 }
