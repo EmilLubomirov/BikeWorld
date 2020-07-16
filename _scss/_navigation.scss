@@ -55,7 +55,7 @@ $delay: 0.15s;
     padding: 10px;
     //padding-left: 15px;
     //padding: 0 20px;
-    background-color: var(--header-background-color);
+    background-color: var(--background-color-main, lightskyblue);
 
     li {
       margin-top: 30px;

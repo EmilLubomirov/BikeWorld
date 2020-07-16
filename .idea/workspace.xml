@@ -3,6 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac0a5d4-339b-43e0-b7e7-48ab1b186c5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bicycles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contacts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +82,18 @@
       <updated>1594718450678</updated>
       <workItem from="1594718452147" duration="13760000" />
       <workItem from="1594804663699" duration="14623000" />
+      <workItem from="1594820815323" duration="337000" />
+      <workItem from="1594905972971" duration="13598000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1594905994496">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1594905994496" />
   </component>
 </project>
