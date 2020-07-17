@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bicycles.html" afterDir="false" />
@@ -17,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,8 @@
       <workItem from="1594718452147" duration="13760000" />
       <workItem from="1594804663699" duration="14623000" />
       <workItem from="1594820815323" duration="337000" />
-      <workItem from="1594905972971" duration="13598000" />
+      <workItem from="1594905972971" duration="13745000" />
+      <workItem from="1595008890555" duration="7319000" />
     </task>
     <servers />
   </component>
@@ -91,9 +89,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1594905994496">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1595008903203">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1594905994496" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1595008903203" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1595011076044" />
   </component>
 </project>

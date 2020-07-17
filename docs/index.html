@@ -116,17 +116,85 @@
 
 <main class="site-main">
     
-    <h1 class="page-title">Начало</h1>
-    
     <div class="page-content">
         <h1>This should be the initial page</h1>
+
+<div class="index-banner">
+
+    <a class="arrow backward"></a>
+    <figure>
+        <img src="https://dragzone.bg/media/wysiwyg/file_5.jpg" alt="discount"/>
+    </figure>
+    <a class="arrow forward"></a>
+</div>
+
+<script>
+
+    async function f() {
+        const elements = {
+            forwardArrow: document.querySelector('.forward'),
+            backwardArrow: document.querySelector('.backward'),
+            imageParent: document.querySelector('.index-banner figure'),
+
+            images: {
+                1: 'https://dragzone.bg/media/wysiwyg/file_5.jpg',
+                2: 'https://news.maxbike.bg/modules/image.php?file_id=4082&destination_width=620',
+                3: 'https://cdn8.dissolve.com/p/D1061_91_046/D1061_91_046_1200.jpg'
+            }
+        };
+
+        let id = 1;
+
+        const actions = {
+            showNext: async () =>{
+
+                const currentImage = elements.imageParent.children[0];
+                // currentImage.style.opacity = '0';
+
+                id++;
+
+                if (id > 3){
+                    id = 1;
+                }
+
+                const imageElement = document.createElement('img');
+                imageElement.src = elements.images[id.toString()];
+                elements.imageParent.children[0].src = imageElement.src;
+                elements.imageParent.style.transform = 'translateX(0px)';
+            },
+
+            showPrev: () =>{
+
+                id--;
+
+                if (id < 1){
+                    id = 3;
+                }
+
+                const imageElement = document.createElement('img');
+                imageElement.src = elements.images[id.toString()];
+
+                elements.imageParent.innerHTML = '';
+                elements.imageParent.appendChild(imageElement);
+            }
+        };
+
+        elements.forwardArrow.addEventListener('click', actions.showNext);
+        elements.backwardArrow.addEventListener('click', actions.showPrev);
+
+        let c = setInterval(actions.showNext, 8000);
+    }
+
+    f();
+
+</script>
     </div>
 </main>
 
 <footer class="site-footer">
 
     <div class="partners">
-        <h4>Нашите партньори</h4>
+        <h4>Нашите партньори :</h4>
 
         <ul>
             <li>
@@ -156,7 +224,7 @@
     </div>
 
     <div class="social-media">
-        <h4>Последвайте ни в социалните мрежи</h4>
+        <h4>Последвайте ни в социалните мрежи :</h4>
         <ul>
             <li>
                 <a class="fb" href="https://www.facebook.com/emil.lubomirov.58">
@@ -177,7 +245,7 @@
     </div>
 
     <div class="contacts">
-        <h4>Очакваме Вашите въпроси на</h4>
+        <h4>Очакваме Вашите въпроси на :</h4>
 
         <ul>
             <li>

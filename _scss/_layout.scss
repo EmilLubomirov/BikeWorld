@@ -40,6 +40,49 @@ header{
   }
 }
 
+/*INDEX PAGE*/
+.index-banner{
+
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  //align-items: center;
+
+  .backward, .forward{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .backward, .forward{
+    cursor: pointer;
+  }
+
+  .backward:before, .forward:before{
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    margin: 0 8px;
+  }
+
+  .backward:before{
+    content: '\f060';
+  }
+
+  .forward:before{
+    content: '\f061';
+  }
+
+  figure{
+    transition: transform 1.5s ease-in-out;
+    //transform: translateX(0px);
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  img{
+    transition: opacity 1s ease-in-out;
+    max-width: 100%;
+  }
+}
 
 /*MOUNTAIN PAGE*/
 .page-main{
@@ -68,6 +111,9 @@ header{
 .bike{
   position: relative;
   background: #fff;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  box-shadow:  0 0 10px 0 gray;
 
   &:hover{
     cursor: pointer;
