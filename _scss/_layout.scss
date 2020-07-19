@@ -10,7 +10,12 @@
 
 .site-main{
   padding: 40px;
+
+  .page-content{
+    height: 100%;
+  }
 }
+
 
 /*HEADER*/
 
@@ -64,22 +69,28 @@ header{
     margin: 0 8px;
   }
 
-  .backward:before{
-    content: '\f060';
-  }
+  //.backward:before{
+  //  content: '\f060';
+  //}
+  //
+  //.forward:before{
+  //  content: '\f061';
+  //}
 
-  .forward:before{
-    content: '\f061';
+  .images{
+    position: relative;
+    width: 100%;
   }
 
   figure{
-    transition: transform 1.5s ease-in-out;
-    //transform: translateX(0px);
-    max-width: 70%;
-    margin: 0 auto;
+    transition: transform 2s linear;
+    position: absolute;
+    //left: 150px;
+    transform: translateX(-1500px);
+    max-width: 90%;
+    //margin: 0 auto;
   }
   img{
-    transition: opacity 1s ease-in-out;
     max-width: 100%;
   }
 }
