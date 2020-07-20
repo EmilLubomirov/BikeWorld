@@ -51,7 +51,7 @@ header{
   display: flex;
   justify-content: space-between;
   height: 100%;
-  //align-items: center;
+  align-items: center;
 
   .backward, .forward{
     &:hover{
@@ -85,10 +85,8 @@ header{
   figure{
     transition: transform 2s linear;
     position: absolute;
-    //left: 150px;
     transform: translateX(-1500px);
-    max-width: 90%;
-    //margin: 0 auto;
+    max-width: 80%;
   }
   img{
     max-width: 100%;

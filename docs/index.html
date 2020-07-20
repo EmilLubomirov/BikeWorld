@@ -123,15 +123,16 @@
 
     <a class="arrow backward"></a>
 
+<!--    https://dragzone.bg/media/wysiwyg/file_5.jpg-->
     <div class="images">
         <figure>
-            <img src="https://dragzone.bg/media/wysiwyg/file_5.jpg" alt="discount"/>
+            <img src="https://www.villas-cavo-marathia.com/files/cache/9e059548a709ee8aa3b42cbeb5e7bb23_f106.jpg" alt="discount"/>
         </figure>
         <figure>
-            <img src="https://i1.wp.com/www.trijordan.com/wp-content/uploads/2018/12/IMG_4714.jpg?resize=1500%2C500&ssl=1" alt="sprint-bikes">
+            <img src="https://s3.amazonaws.com/aog-websites/usafa-org/images/service/hansen69/hansen-widebanner.jpg" alt="sprint-bikes">
         </figure>
         <figure>
-            <img src="https://ozkan.accountants/wp-content/uploads/2015/08/CONTACT-2000x500px-1024x430.png" alt="sprint-bikes">
+            <img src="https://www.haylecycles.com/userdata/resources/images/merida-home-the-new-bignine-jpg-aa258b7a6b-3579.jpg" alt="sprint-bikes">
         </figure>
     </div>
 
@@ -142,15 +143,16 @@
 
     (async function indexAnimation()  {
 
-        document.querySelector('.site-main').style.height = '450px';
-        let c = 0;
-
         const elements = {
 
             forwardArrow: document.querySelector('.forward'),
             backwardArrow: document.querySelector('.backward'),
-            imageParent: document.querySelector('.images'),
+            imageParent: document.querySelector('.index-banner .images'),
         };
+
+        let c = 0;
+        const imagesLength = elements.imageParent.children.length;
+        let nextImage = elements.imageParent.children[0];
 
         let id = -1;
 
@@ -161,23 +163,19 @@
 
                 id++;
 
-                if (id > 2){
+                if (id >= imagesLength){
                     id = 0;
                 }
 
-                const nextImage = elements.imageParent.children[id];
-                nextImage.style.height = 'auto';
-                nextImage.style.width = '100%';
-                nextImage.style.transform = 'translateX(0px)';
+                nextImage = elements.imageParent.children[id];
+                actions.setImageProperties('100%', 'auto', 'translateX(0px)', nextImage);
 
                 elements.forwardArrow.onclick = null;
 
                 await setTimeout(() =>{
-                    const prevIndex = (id - 1) >= 0 ? (id - 1) : 2;
+                    const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
                     const prevImage = elements.imageParent.children[prevIndex];
-                    prevImage.style.height = '0';
-                    prevImage.style.width = '0';
-                    prevImage.style.transform = 'translateX(-1500px)';
+                    actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
                     prevImage.style.zIndex = '0';
 
                     elements.forwardArrow.addEventListener('click', actions.showNext);
@@ -190,7 +188,7 @@
                 id--;
 
                 if (id < 0){
-                    id = 2;
+                    id = imagesLength - 1;
                 }
 
                 const prevImage = elements.imageParent.children[id];
@@ -206,6 +204,16 @@
                     nextImage.style.zIndex = '0';
 
                 }, 2 * 1000);
+            },
+
+            resetHeight: () =>{
+                elements.imageParent.style.height = nextImage.clientHeight + 'px';
+            },
+
+            setImageProperties: (width, height, transform, img) => {
+                img.style.width = width;
+                img.style.height = height;
+                img.style.transform = transform;
             }
         };
 
@@ -221,6 +229,9 @@
         //     await actions.showPrev();
         //     c = setInterval(actions.showNext, 5000);
         // });
+
+        actions.resetHeight();
+        window.addEventListener('resize', actions.resetHeight);
 
         await actions.showNext();
         c = setInterval(actions.showNext, 4000);

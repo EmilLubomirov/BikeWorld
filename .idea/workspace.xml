@@ -14,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,9 @@
       <workItem from="1595008890555" duration="7580000" />
       <workItem from="1595017728326" duration="1228000" />
       <workItem from="1595020284728" duration="412000" />
-      <workItem from="1595145976635" duration="10241000" />
+      <workItem from="1595145976635" duration="10357000" />
+      <workItem from="1595230473723" duration="2622000" />
+      <workItem from="1595235537436" duration="2958000" />
     </task>
     <servers />
   </component>
@@ -92,10 +93,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1595146015175">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1595235537419">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1595146015175" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1595235537419" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
