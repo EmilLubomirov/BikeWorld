@@ -1,5 +1,6 @@
 title: Bike World
-email: demo@email.com
+email: bike-world@gmail.bg
+phone: 0894 234 432
 description: Site related to bikes using Jekyll and HTML&CSS
 destination: docs
 baseurl: "/BikeWorld" # the subpath of your site, e.g. /blog

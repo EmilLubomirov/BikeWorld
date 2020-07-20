@@ -1,14 +1,14 @@
 /*Common*/
 
 .loaded{
-  header {
-    li{
-      transform: translateY(0);
-    }
+
+  header li, .about-us figure{
+    transform: translateY(0);
   }
 }
 
 .site-main{
+  //min-height: 300px;
   padding: 40px;
 
   .page-content{
@@ -123,9 +123,12 @@ header{
   border: 2px solid darkgray;
   border-radius: 5px;
   box-shadow:  0 0 10px 0 gray;
+  transition: transform 0.5s ease-in-out;
 
   &:hover{
     cursor: pointer;
+    //border: 3px solid rgba(255, 0, 0, 0.66);
+    transform: scale(1.05);
   }
 
   &:hover > .info{
@@ -158,6 +161,143 @@ header{
   font-size: larger;
   font-weight: 600;
   color: red;
+
+  span{
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+}
+
+/*ABOUT PAGE*/
+
+.about-us{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.84);
+
+  & > figure{
+    transition: transform 1.5s linear;
+    transform: translateY(-500px);
+    flex-basis: 40%;
+    margin-right: 0;
+  }
+  img{
+    max-width: 90%;
+  }
+
+  p{
+    padding: 10px;
+    line-height: 1.5;
+    font-weight: bolder;
+    font-size: large;
+    //color: #fff;
+    flex-basis: 40%;
+  }
+
+  .bikes-brands-info{
+    text-align: center;
+    margin: 70px auto;
+
+    figure{
+      background-color: #fff;
+      margin: 0;
+    }
+
+    .bikes-brands{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 0.2fr);
+    }
+  }
+}
+
+.contact-details{
+  font-size: larger;
+  padding: 30px;
+
+  iframe{
+    max-width: 100%;
+  }
+}
+
+/*FAQs page*/
+.questions-wrapper{
+
+  background-color: #fffffff2;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: larger;
+
+  ul{
+    list-style: none;
+    max-width: 80%;
+    margin: 0 auto;
+
+    li {
+      margin-top: 60px;
+
+      &:before{
+        content: '\f007';
+      }
+    }
+  }
+
+  .more{
+    opacity: 0;
+    height: 0;
+    transition: opacity 1s ease-in,
+    height 1.1s 0.2s ease-in;
+
+    li, p {
+      display: none;
+    }
+  }
+
+  .read-more {
+    //display: none;
+    height: 0;
+
+    &-label {
+      position: relative;
+      display: block;
+      margin: 20px;
+
+      &:before {
+        color: #a61717;
+        cursor: pointer;
+        content: 'Read more';
+      }
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        width: 13px;
+        margin-left: 7px;
+        content: '\f062'; //Arrow up
+      }
+    }
+
+    &:checked ~ .more {
+      opacity: 1;
+      height: 100%;
+      transition: opacity 1.1s 0.4s ease-in;
+
+      li, p {
+        display: block;
+      }
+    }
+
+    &:checked + label:before {
+      content: 'Read less';
+    }
+
+    &:checked + .read-more-label:after {
+      //content: url("../icons/arrow-down-solid.svg");
+    }
+
+  }
 }
 
 /*FOOTER*/
