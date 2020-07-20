@@ -108,4 +108,103 @@
     </span>
 </footer>
 </body>
+
+<script>
+    (async function indexAnimation()  {
+
+        const elements = {
+
+            forwardArrow: document.querySelector('.forward'),
+            backwardArrow: document.querySelector('.backward'),
+            imageParent: document.querySelector('.index-banner .images'),
+        };
+
+        let c = 0;
+        const imagesLength = elements.imageParent.children.length;
+        let nextImage = elements.imageParent.children[0];
+
+        let id = -1;
+
+        const actions = {
+            showNext: async () =>{
+
+                // currentImage.style.opacity = '0';
+
+                id++;
+
+                if (id >= imagesLength){
+                    id = 0;
+                }
+
+                nextImage = elements.imageParent.children[id];
+                actions.setImageProperties('100%', 'auto', 'translateX(0px)', nextImage);
+
+                elements.forwardArrow.onclick = null;
+
+                await setTimeout(() =>{
+                    const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
+                    const prevImage = elements.imageParent.children[prevIndex];
+                    actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
+                    prevImage.style.zIndex = '0';
+
+                    elements.forwardArrow.addEventListener('click', actions.showNext);
+
+                }, 2.0 * 1000);
+            },
+
+            showPrev: async () =>{
+
+                id--;
+
+                if (id < 0){
+                    id = imagesLength - 1;
+                }
+
+                const prevImage = elements.imageParent.children[id];
+                prevImage.style.height = 'auto';
+                prevImage.style.width = '100%';
+                prevImage.style.transform = 'translateX(0px)';
+
+                await setTimeout(() =>{
+                    const nextImage = elements.imageParent.children[id + 1];
+                    nextImage.style.height = '0';
+                    nextImage.style.width = '0';
+                    nextImage.style.transform = 'translateX(-1500px)';
+                    nextImage.style.zIndex = '0';
+
+                }, 2 * 1000);
+            },
+
+            resetHeight: () =>{
+                elements.imageParent.style.height = nextImage.clientHeight + 'px';
+                // elements.imageParent.style.height = 500 + 'px';
+            },
+
+            setImageProperties: (width, height, transform, img) => {
+                img.style.width = width;
+                img.style.height = height;
+                img.style.transform = transform;
+            }
+        };
+
+        // elements.forwardArrow.addEventListener('click', async () =>{
+        //      await clearInterval(c);
+        //      await actions.showNext();
+        //      c = setInterval(actions.showNext, 5000);
+        //
+        // });
+
+        // elements.backwardArrow.addEventListener('click', async () =>{
+        //     await clearInterval(c);
+        //     await actions.showPrev();
+        //     c = setInterval(actions.showNext, 5000);
+        // });
+
+        actions.resetHeight();
+        window.addEventListener('resize', actions.resetHeight);
+
+        await actions.showNext();
+        c = setInterval(actions.showNext, 4000);
+    }());
+</script>
 </html>
