@@ -17,6 +17,7 @@
 </head>
 
 <script>
+
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
 
@@ -56,7 +57,7 @@
                     if (!elements.imageParent){
                         return;
                     }
-                    
+
                     nextImage = elements.imageParent.children[id];
                     actions.setImageProperties('100%', 'auto', 'translateX(0px)', nextImage);
 
@@ -139,7 +140,7 @@
 </header>
 
 <main class="site-main">
-    {% if page.title and page.title != 'Начало' %}
+    {% if page.title and page.title != 'Начало' and page.title != 'Планински' and page.title != 'Шосейни' %}
     <h1 class="page-title">{{page.title}}</h1>
     {% endif %}
     <div class="page-content">
@@ -205,15 +206,15 @@
 
         <ul>
             <li>
-                <span class="email">{{site.email}}</span>
+                <a class="email">{{site.email}}</a>
             </li>
             <li>
-                <span class="phone">{{site.phone}}</span>
+                <a class="phone">{{site.phone}}</a>
             </li>
         </ul>
     </div>
     <span>
-        All rights reserved 2020 &copy;
+        Всички права запазени 2020 &copy;
     </span>
 </footer>
 </body>

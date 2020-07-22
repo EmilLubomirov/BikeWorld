@@ -92,7 +92,8 @@ $delay: 0.15s;
 //  opacity: 1;
 //}
 
-.page-title-bicycles:before{
+.page-title-bicycles::before{
+  //content: url("../icons/bicycle-solid.svg");
   content: '\f206';
 }
 
@@ -101,7 +102,7 @@ $delay: 0.15s;
 }
 
 .page-title-contacts:before{
-  content: '\f2b9';
+  content: '\f2a0';
 }
 
 .page-title-faqs:before{

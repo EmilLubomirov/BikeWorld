@@ -23,7 +23,7 @@
                 </li>
             </ul>
         </li>
-            {% else %}
+            {% elsif current-page.title != 'Планински' and current-page.title != "Шосейни" %}
         <li>
             <a class="nav-links page-title-{{ current-page.title-en | slugify }}
                                         {%if current-page.url == page.url %}active{% endif %}"
