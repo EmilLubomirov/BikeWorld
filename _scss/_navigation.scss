@@ -18,6 +18,10 @@ $delay: 0.15s;
     padding: 0;
     margin: 0;
 
+    @include bp(phone){
+      flex-flow: column wrap;
+    }
+
     li{
       transform: translateY(-100px);
       transition: transform 0.8s ease-in-out;
@@ -58,6 +62,11 @@ $delay: 0.15s;
     //height: 0;
     //display: none;
     background-color: var(--background-color-main, lightskyblue);
+
+    @include bp(phone){
+      position: relative;
+      left: 150px;
+    }
 
     li {
       margin-top: 30px;

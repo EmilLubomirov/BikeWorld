@@ -8,8 +8,20 @@
 }
 
 .site-main{
-  //min-height: 300px;
+  //height: 700px;
+
+  /*THIS IS JUST INITIAL MOCKING VALUE*/
+  .images{
+    height: 800px;
+  }
+
   padding: 40px;
+
+  //.page-header{
+  //  @include bp(phone){
+  //    //font-size: 3vw;
+  //  }
+  //}
 
   .page-content{
     height: 100%;
@@ -26,6 +38,10 @@ header{
   background-color: var(--background-color-main, lightskyblue);
   height: 120px;
 
+  @include bp(phone){
+    height: 300px;
+  }
+
   .site-logo{
 
     position: relative;
@@ -33,6 +49,10 @@ header{
 
     img{
       height: 100%;
+
+      @include bp(phone){
+        height: 20%;
+      }
     }
 
     a {
@@ -94,7 +114,7 @@ header{
   }
 }
 
-/*MOUNTAIN PAGE*/
+/*BIKES PAGE*/
 .page-main{
   margin-top: 70px;
 }
@@ -102,14 +122,21 @@ header{
 .bikes-collection{
   display: grid;
   grid-template-columns: repeat(4, 21%);
-  //grid-template-rows: repeat(3, 1fr);
   gap: 60px;
   text-align: center;
-  //align-items: center;
 
-  //figure{
-  //  margin: 0;
-  //}
+  @include bp(mobile){
+    grid-template-columns: repeat(3, 29%);
+  }
+
+  @include bp(tablet){
+    grid-template-columns: repeat(2, 42%);
+  }
+
+  @include bp(phone){
+    grid-template-columns: repeat(1, 65%);
+    justify-content: center;
+  }
 
   img{
     max-height: 184px;
@@ -129,7 +156,6 @@ header{
 
   &:hover{
     cursor: pointer;
-    //border: 3px solid rgba(255, 0, 0, 0.66);
     transform: scale(1.05);
   }
 
@@ -146,6 +172,12 @@ header{
   & h3, .price{
     background-color: aquamarine;
   }
+
+  & h3{
+    @include bp(phone){
+      font-size: 4vw;
+    }
+  }
 }
 
 .info{
@@ -157,6 +189,14 @@ header{
   font-size: 15px;
   top: 40px;
   left: 60px;
+
+  @include bp(tablet){
+    font-size: 2vw;
+  }
+
+  @include bp(phone){
+    font-size: 2.8vw;
+  }
 }
 
 .price{
@@ -171,18 +211,25 @@ header{
 }
 
 /*ABOUT PAGE*/
-
 .about-us{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.84);
 
+  @include bp(tablet){
+    font-size: 2.1vw;
+  }
+
   & > figure{
     transition: transform 1.5s linear;
     transform: translateY(-500px);
     flex-basis: 40%;
     margin-right: 0;
+
+    @include bp(tablet){
+      flex-basis: 80%;
+    }
   }
   img{
     max-width: 90%;
@@ -195,6 +242,11 @@ header{
     font-size: large;
     //color: #fff;
     flex-basis: 40%;
+
+    @include bp(tablet){
+      font-size: 2.4vw;
+      flex-basis: 70%;
+    }
   }
 
   .bikes-brands-info{
@@ -214,23 +266,33 @@ header{
   }
 }
 
+/*CONTACTS PAGE*/
 .contact-details{
-  font-size: larger;
+  background-color: var(--background-color-secondary);
   padding: 30px;
+  font-size: large;
+
+  @include bp(phone){
+    font-size: 2.8vw;
+  }
 
   iframe{
     max-width: 100%;
   }
 }
 
-/*FAQs page*/
+/*FAQs PAGE*/
 .questions-wrapper{
 
-  background-color: #fffffff2;
+  background-color: var(--background-color-secondary);
   max-width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   font-size: larger;
+
+  @include bp(phone){
+    font-size: 2.8vw;
+  }
 
   ul{
     list-style: none;
@@ -250,6 +312,7 @@ header{
   }
 
   .more{
+    padding: 0;
     opacity: 0;
     height: 0;
     transition: opacity 1s ease-in,
@@ -261,7 +324,6 @@ header{
   }
 
   .read-more {
-    //display: none;
     height: 0;
 
     &-label {
@@ -313,12 +375,22 @@ header{
 /*FOOTER*/
 .site-footer{
   background-color: var(--background-color-main, lightskyblue);
-  height: 320px;
+  height: fit-content;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-
   padding: 10px 40px;
+
+  @include bp(phone){
+    flex-flow: column;
+    align-items: center;
+  }
+
+  h4 {
+    @include bp(phone){
+      font-size: 3.4vw;
+    }
+  }
 
   ul{
     display: flex;
@@ -340,8 +412,21 @@ header{
     }
   }
 
+  .partners, .social-media{
+    max-width: 30%;
+  }
+
   .partners{
     flex-flow: row wrap;
+
+    h4 {
+      text-align: center;
+    }
+
+    img {
+      margin-right: 25px;
+      width: 37%;
+    }
 
     ul {
       flex-flow: row wrap;
@@ -352,6 +437,11 @@ header{
        li{
          flex: 0 1 40%;
          margin-right: 20px;
+
+         @include bp(phone){
+           flex-basis: 70%;
+           margin-right: 0;
+         }
        }
     }
 
@@ -371,6 +461,10 @@ header{
       text-decoration: none;
       color: #fff;
       font-size: larger;
+
+      @include bp(phone){
+        font-size: 3.5vw;
+      }
     }
 
     a:before{
@@ -396,8 +490,14 @@ header{
     justify-content: space-between;
     font-size: large;
 
-    a:before{
-      font-family: "Font Awesome 5 Free", serif;
+    a {
+      @include bp(phone){
+        font-size: 3.3vw;
+      }
+
+      &:before{
+        font-family: "Font Awesome 5 Free", serif;
+      }
     }
   }
 
@@ -412,25 +512,16 @@ header{
     display: block;
   }
 
-  .email:before{
-    content: '\f199';
+  .email{
+    margin-bottom: 20px;
+
+    &:before{
+      content: '\f199';
+    }
   }
 
   .phone:before{
     content: '\f095';
-  }
-}
-
-.partners{
-  max-width: 30%;
-
-  h4 {
-    text-align: center;
-  }
-
-  img {
-    margin-right: 25px;
-    width: 37%;
   }
 }
 
