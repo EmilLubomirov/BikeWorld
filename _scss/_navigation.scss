@@ -85,6 +85,10 @@ $delay: 0.15s;
   font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
   margin: 0 8px;
+  //display: inline-block;
+  //width: 15px;
+  //margin: 0 10px;
+  //color: white;
 }
 
 //.page-title-bicycles:hover > ul{
@@ -92,8 +96,7 @@ $delay: 0.15s;
 //  opacity: 1;
 //}
 
-.page-title-bicycles::before{
-  //content: url("../icons/bicycle-solid.svg");
+.page-title-bicycles:before{
   content: '\f206';
 }
 

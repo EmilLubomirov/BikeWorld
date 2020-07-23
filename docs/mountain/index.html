@@ -40,6 +40,7 @@
             let nextImage = elements.imageParent.children[0];
 
             let id = -1;
+            let isLast = false;
 
             const actions = {
                 showNext: async () =>{
@@ -47,6 +48,8 @@
                     // currentImage.style.opacity = '0';
 
                     id++;
+
+                    isLast = (id === imagesLength);
 
                     if (id >= imagesLength){
                         id = 0;
@@ -61,15 +64,20 @@
 
                     elements.forwardArrow.onclick = null;
 
-                    await setTimeout(() =>{
-                        const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
-                        const prevImage = elements.imageParent.children[prevIndex];
+                    const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
+                    const prevImage = elements.imageParent.children[prevIndex];
+
+                    if (isLast){
                         actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
-                        prevImage.style.zIndex = '0';
+                    }
 
-                        elements.forwardArrow.addEventListener('click', actions.showNext);
+                    else {
+                        await setTimeout(() =>{
+                            actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
+                            elements.forwardArrow.addEventListener('click', actions.showNext);
 
-                    }, 2.0 * 1000);
+                        }, 2.0 * 1000);
+                    }
                 },
 
                 showPrev: async () =>{
@@ -240,7 +248,7 @@
         <article class="bike">
             <h3>Sprint Tornado 29"</h3>
             <figure>
-                <img src="https://p1.akcdn.net/full/493166853.sprint-tornado-29.jpg" alt="sprint-tornado">
+                <img src="https://www.bikesport.bg/data/uploads/originals/products/cn_26263/6058cb8b5a3ce9d9eb196f7adddd02a5.jpg" alt="sprint-tornado">
             </figure>
 
             <div class="info">
