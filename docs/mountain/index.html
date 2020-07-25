@@ -23,6 +23,64 @@
 
         (async function indexAnimation()  {
 
+            const helperFunctions = {
+                getDeviceType:  (screenWidth) =>{
+
+                    const deviceDimensions = {
+                        'phone': 600,
+                        'tablet': 900,
+                        'mobile': 1024,
+                        'desktop': 1599,
+                    };
+
+                    let c;
+
+                    if (screenWidth <= deviceDimensions.phone){
+                        return 'phone';
+                    }
+
+                    else if (screenWidth <= deviceDimensions.tablet){
+                        return 'tablet';
+                    }
+
+                    else if (screenWidth <= deviceDimensions.mobile){
+                        return 'mobile';
+                    }
+
+                    else if (screenWidth <= deviceDimensions.desktop) {
+                        return 'desktop';
+                    }
+
+                    else {
+                        return 'large';
+                    }
+
+                    // switch (screenWidth) {
+                    //
+                    //     case (screenWidth <= deviceDimensions.phone): c = 'phone'; break;
+                    //     case (screenWidth <= deviceDimensions.tablet): c =  'tablet'; break;
+                    //     case (screenWidth <= deviceDimensions.mobile): c =  'mobile'; break;
+                    //     case (screenWidth <= deviceDimensions.desktop): c =  'desktop'; break;
+                    //     default: c =  'large';
+                    // }
+                },
+
+                getAnimationImagePosition: (screenWidth) => {
+
+                const devicePositions = {
+                    'phone': -10,
+                    'tablet': -750,
+                    'mobile': -1000,
+                    'desktop': -1500,
+                    'large': -1800,
+                };
+
+                const deviceType = helperFunctions.getDeviceType(screenWidth);
+                    console.log(deviceType);
+                    return devicePositions[deviceType];
+            },
+            };
+
             const elements = {
 
                 forwardArrow: document.querySelector('.forward'),
@@ -35,8 +93,6 @@
             if (!elements.imageParent){
                 return;
             }
-
-            // document.querySelector('.index-banner').style.height = '';
 
             const imagesLength = elements.imageParent.children.length;
             let nextImage = elements.imageParent.children[0];
@@ -69,13 +125,17 @@
                     const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
                     const prevImage = elements.imageParent.children[prevIndex];
 
+                    // const screenWidth = window.innerWidth;
+                    // const imageInitialPosition = helperFunctions.getAnimationImagePosition(screenWidth);
+                    // console.log(imageInitialPosition);
+
                     if (isLast){
-                        actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
+                        actions.setImageProperties('0', '0', `translateX(-1500px)`, prevImage);
                     }
 
                     else {
                         await setTimeout(() =>{
-                            actions.setImageProperties('0', '0', 'translateX(-1500px)', prevImage);
+                            actions.setImageProperties('0', '0', `translateX(-1500px)`, prevImage);
                             elements.forwardArrow.addEventListener('click', actions.showNext);
 
                         }, 2.0 * 1000);
@@ -143,13 +203,13 @@
 <!--<input type="checkbox" id="input-checkbox" class="input-checkbox">-->
 
 <header class="site-header">
-    <div class="site-logo">
-    <a href="/BikeWorld/">
+    <!--<div class="site-logo">-->
+    <a class="site-logo" href="/BikeWorld/">
 <!--        <figure>-->
             <img src="/BikeWorld/images/site-logo.png" alt="site-logo">
 <!--        </figure>-->
     </a>
-</div>
+<!--</div>-->
     <!--<label for="input-checkbox" class="input-checkbox-label">Menu</label>-->
 <nav class="nav location-header">
     <ul>

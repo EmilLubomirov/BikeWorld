@@ -5,10 +5,24 @@ $delay: 0.15s;
   position: absolute;
   right: 50px;
   top: 50px;
-  width: 40%;
+  //width: 40%;
+
+  @include bp(tablet){
+    top: 140px;
+    left: 8%;
+  }
+
+  @include bp(phone){
+    top: 130px;
+    left: 33%;
+  }
 
   ul{
     list-style: none;
+
+    @include bp(phone){
+      font-size: 21px;
+    }
   }
 
   & > ul {
@@ -18,18 +32,29 @@ $delay: 0.15s;
     padding: 0;
     margin: 0;
 
-    @include bp(phone){
+    @include bp(phone) {
       flex-flow: column wrap;
     }
 
     li{
       transform: translateY(-100px);
       transition: transform 0.8s ease-in-out;
+      margin-right: 15px;
 
       @for $i from 1 through 5{
         &:nth-child(0n + #{$i}){
           transition-delay: $i * $delay;
         }
+      }
+
+      @include bp(tablet) {
+        transform: translateY(-200px);
+        transition: transform 1.2s ease-in-out;
+        margin-top: 25px;
+      }
+
+      @include bp(phone){
+        transform: translateY(0);
       }
     }
   }
@@ -40,7 +65,7 @@ $delay: 0.15s;
     display: inline-block;
     //padding: 10px;
     transition: transform 0.6s ease-in-out,
-            background-color 0.5s ease-in-out;
+                background-color 0.5s ease-in-out;
 
     &:hover{
       //background: #ffc89a;
@@ -51,22 +76,28 @@ $delay: 0.15s;
   }
 }
 
-.bicycles-item{
+ul > li.bicycles-item{
+
+  margin-right: 0;
+
+  @include bp(phone){
+    max-width: fit-content;
+  }
+
+  //@include bp(phone){
+  //
+  //  &:hover .site-header{
+  //    height: 520px;
+  //  }
+  //}
+
 
   ul {
-    transition: opacity 0.8s ease-in-out;
-    opacity: 0;
-    padding: 10px;
-    //padding-left: 15px;
-    //padding: 0 20px;
-    //height: 0;
-    //display: none;
+    transition: max-height 1.5s ease-in-out;
+    padding: 0 8px 0 20px;
+    max-height: 0;
+    overflow: hidden;
     background-color: var(--background-color-main, lightskyblue);
-
-    @include bp(phone){
-      position: relative;
-      left: 150px;
-    }
 
     li {
       margin-top: 30px;
@@ -82,12 +113,20 @@ $delay: 0.15s;
   }
 
   &:hover > ul {
-    opacity: 1;
-    //height: auto;
+    //opacity: 1;
+    max-height: 250px;
     //display: block;
     //flex-flow: column;
     //align-items: center;
   }
+
+  //& > a:hover + ul{
+  //  opacity: 1;
+  //}
+  //
+  //& > a:hover &{
+  //
+  //}
 }
 
 .nav-links:before{
