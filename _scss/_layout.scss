@@ -126,9 +126,13 @@ header {
     //max-width: 100%;
     margin: 0;
 
-    //@include bp(phone){
-    //  transform: translateX(-10px);
-    //}
+    @include bp(tablet){
+      transform: translateX(-850px);
+    }
+
+    @include bp(phone){
+      transform: translateX(-650px);
+    }
   }
   img{
     max-width: 100%;

@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         
-        За нас | Bike World
+            За нас | Bike World
         
     </title>
 
     <link rel="stylesheet" href="/BikeWorld//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="/BikeWorld/css/site.css">
     <link rel="icon" href="/BikeWorld/images/site-logo.png">
+
+    
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 </head>
 
@@ -19,183 +22,9 @@
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
 
-        //TODO: FOLLOWING PIECE OF CODE IN SEPARATE FILE AND INCLUDE IT IF THE PAGE IS INDEX
-
-        (async function indexAnimation()  {
-
-            const helperFunctions = {
-                getDeviceType:  (screenWidth) =>{
-
-                    const deviceDimensions = {
-                        'phone': 600,
-                        'tablet': 900,
-                        'mobile': 1024,
-                        'desktop': 1599,
-                    };
-
-                    let c;
-
-                    if (screenWidth <= deviceDimensions.phone){
-                        return 'phone';
-                    }
-
-                    else if (screenWidth <= deviceDimensions.tablet){
-                        return 'tablet';
-                    }
-
-                    else if (screenWidth <= deviceDimensions.mobile){
-                        return 'mobile';
-                    }
-
-                    else if (screenWidth <= deviceDimensions.desktop) {
-                        return 'desktop';
-                    }
-
-                    else {
-                        return 'large';
-                    }
-
-                    // switch (screenWidth) {
-                    //
-                    //     case (screenWidth <= deviceDimensions.phone): c = 'phone'; break;
-                    //     case (screenWidth <= deviceDimensions.tablet): c =  'tablet'; break;
-                    //     case (screenWidth <= deviceDimensions.mobile): c =  'mobile'; break;
-                    //     case (screenWidth <= deviceDimensions.desktop): c =  'desktop'; break;
-                    //     default: c =  'large';
-                    // }
-                },
-
-                getAnimationImagePosition: (screenWidth) => {
-
-                const devicePositions = {
-                    'phone': -10,
-                    'tablet': -750,
-                    'mobile': -1000,
-                    'desktop': -1500,
-                    'large': -1800,
-                };
-
-                const deviceType = helperFunctions.getDeviceType(screenWidth);
-                    console.log(deviceType);
-                    return devicePositions[deviceType];
-            },
-            };
-
-            const elements = {
-
-                forwardArrow: document.querySelector('.forward'),
-                backwardArrow: document.querySelector('.backward'),
-                imageParent: document.querySelector('.index-banner .images'),
-            };
-
-            let c = 0;
-
-            if (!elements.imageParent){
-                return;
-            }
-
-            const imagesLength = elements.imageParent.children.length;
-            let nextImage = elements.imageParent.children[0];
-
-            let id = -1;
-            let isLast = false;
-
-            const actions = {
-                showNext: async () =>{
-
-                    // currentImage.style.opacity = '0';
-
-                    id++;
-
-                    isLast = (id === imagesLength);
-
-                    if (id >= imagesLength){
-                        id = 0;
-                    }
-
-                    if (!elements.imageParent){
-                        return;
-                    }
-
-                    nextImage = elements.imageParent.children[id];
-                    actions.setImageProperties('100%', 'auto', 'translateX(0px)', nextImage);
-
-                    elements.forwardArrow.onclick = null;
-
-                    const prevIndex = (id - 1) >= 0 ? (id - 1) : (imagesLength - 1);
-                    const prevImage = elements.imageParent.children[prevIndex];
-
-                    // const screenWidth = window.innerWidth;
-                    // const imageInitialPosition = helperFunctions.getAnimationImagePosition(screenWidth);
-                    // console.log(imageInitialPosition);
-
-                    if (isLast){
-                        actions.setImageProperties('0', '0', `translateX(-1500px)`, prevImage);
-                    }
-
-                    else {
-                        await setTimeout(() =>{
-                            actions.setImageProperties('0', '0', `translateX(-1500px)`, prevImage);
-                            elements.forwardArrow.addEventListener('click', actions.showNext);
-
-                        }, 2.0 * 1000);
-                    }
-                },
-
-                showPrev: async () =>{
-
-                    id--;
-
-                    if (id < 0){
-                        id = imagesLength - 1;
-                    }
-
-                    const prevImage = elements.imageParent.children[id];
-                    prevImage.style.height = 'auto';
-                    prevImage.style.width = '100%';
-                    prevImage.style.transform = 'translateX(0px)';
-
-                    await setTimeout(() =>{
-                        const nextImage = elements.imageParent.children[id + 1];
-                        nextImage.style.height = '0';
-                        nextImage.style.width = '0';
-                        nextImage.style.transform = 'translateX(-1500px)';
-                        nextImage.style.zIndex = '0';
-
-                    }, 2 * 1000);
-                },
-
-                resetHeight: () =>{
-                    elements.imageParent.style.height = nextImage.clientHeight + 'px';
-                    // elements.imageParent.style.height = 500 + 'px';
-                },
-
-                setImageProperties: (width, height, transform, img) => {
-                    img.style.width = width;
-                    img.style.height = height;
-                    img.style.transform = transform;
-                }
-            };
-
-            // elements.forwardArrow.addEventListener('click', async () =>{
-            //      await clearInterval(c);
-            //      await actions.showNext();
-            //      c = setInterval(actions.showNext, 5000);
-            //
-            // });
-
-            // elements.backwardArrow.addEventListener('click', async () =>{
-            //     await clearInterval(c);
-            //     await actions.showPrev();
-            //     c = setInterval(actions.showNext, 5000);
-            // });
-
-            actions.resetHeight();
-            window.addEventListener('resize', actions.resetHeight);
-
-            await actions.showNext();
-            c = setInterval(actions.showNext, 4000);
-        }());
+        if (document.title.startsWith('Начало')){
+            indexAnimation();
+        }
     }
 </script>
 
