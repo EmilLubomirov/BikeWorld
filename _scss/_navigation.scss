@@ -19,10 +19,7 @@ $delay: 0.15s;
 
   ul{
     list-style: none;
-
-    @include bp(phone){
-      font-size: 21px;
-    }
+    font-size: 21px;
   }
 
   & > ul {
@@ -33,7 +30,7 @@ $delay: 0.15s;
     margin: 0;
 
     @include bp(phone) {
-      flex-flow: column wrap;
+      display: none;
     }
 
     li{
@@ -174,3 +171,26 @@ ul > li.bicycles-item{
 //.active{
 //  background-color: red;
 //}
+
+.input-checkbox{
+  position: absolute;
+  pointer-events: none;
+  display: none;
+
+  &-label{
+    display: none;
+
+    @include bp(phone){
+      display: block;
+    }
+  }
+
+  &:checked ~ .nav.location-header > ul{
+    display: flex;
+
+    @include bp(phone){
+      flex-flow: column wrap;
+      font-size: 21px;
+    }
+  }
+}

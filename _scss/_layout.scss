@@ -57,6 +57,11 @@ header {
       left: 40%;
     }
 
+    @include bp(phone) {
+      height: 15%;
+      left: 35%;
+    }
+
     //position: relative;
 
     img {
