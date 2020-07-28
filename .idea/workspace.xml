@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac0a5d4-339b-43e0-b7e7-48ab1b186c5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/navigation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bicycles.html" afterDir="false" />
@@ -99,7 +97,8 @@
       <workItem from="1595509558077" duration="5493000" />
       <workItem from="1595525159692" duration="11198000" />
       <workItem from="1595669175983" duration="15694000" />
-      <workItem from="1595757304899" duration="9261000" />
+      <workItem from="1595757304899" duration="9352000" />
+      <workItem from="1595936719226" duration="1273000" />
     </task>
     <servers />
   </component>
@@ -111,10 +110,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1595527255405" />
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1595757304899">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1595943631238">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1595757304899" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1595943631238" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -571,7 +571,10 @@ header {
 
 .instagram:before{
   content: '\f16d';
-  //content: url("../icons/instagram.svg");
+  //content: '';
+  //width: 20px;
+  //height: 20px;
+  //background: url("../icons/instagram-sketched.svg");
 }
 
 .twitter:before{
