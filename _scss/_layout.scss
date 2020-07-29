@@ -7,6 +7,36 @@
   }
 }
 
+input.input-checkbox{
+  position: absolute;
+  pointer-events: none;
+  display: none;
+
+  &:checked + .site-header{
+    height: 550px;
+
+    .nav > ul {
+      display: flex;
+      animation: nav-show 0.6s;
+
+      @keyframes nav-show {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @include bp(phone){
+        flex-flow: column wrap;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
 .site-main{
 
   padding: 40px;
@@ -33,15 +63,11 @@ header {
   font-size: var(--header-font-size);
   justify-content: space-between;
   background-color: var(--background-color-main, lightskyblue);
+  transition: height 0.5s ease-in-out;
   height: 120px;
 
   @include bp(tablet) {
     height: 220px;
-  }
-
-  @include bp(phone) {
-    height: 520px;
-    //height: 100vw;
   }
 
   .site-logo {
@@ -259,6 +285,11 @@ header {
 
     @include bp(tablet){
       flex-basis: 80%;
+    }
+
+    @include bp(phone){
+      transition-duration: 2.3s;
+      transform: translateY(-900px);
     }
   }
   img{
