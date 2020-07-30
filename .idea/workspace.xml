@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac0a5d4-339b-43e0-b7e7-48ab1b186c5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/navigation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
@@ -17,8 +16,8 @@
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/faqs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/road.html" beforeDir="false" afterPath="$PROJECT_DIR$/road.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\css-advanced-project\bike-world\images\bikes-mountain" />
       <recent name="C:\css-advanced-project\bike-world\images\partners" />
       <recent name="C:\css-advanced-project\bike-world\images\bikes-brands" />
       <recent name="C:\css-advanced-project\bike-world\images" />
       <recent name="C:\css-advanced-project\bike-world\images\bikes-road" />
-      <recent name="C:\css-advanced-project\bike-world\images\bikes-mountain" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -111,7 +110,8 @@
       <workItem from="1595943630548" duration="153000" />
       <workItem from="1596018873875" duration="1853000" />
       <workItem from="1596022573672" duration="3299000" />
-      <workItem from="1596043347113" duration="9878000" />
+      <workItem from="1596043347113" duration="9972000" />
+      <workItem from="1596096394720" duration="6215000" />
     </task>
     <servers />
   </component>
@@ -123,10 +123,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1595527255405" />
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596043379764">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596096414001">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596043379764" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596096414001" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
