@@ -306,6 +306,11 @@ header {
     //color: #fff;
     flex-basis: 40%;
 
+    i{
+      font-size: larger;
+      color: dodgerblue;
+    }
+
     @include bp(tablet){
       font-size: 2.4vw;
       flex-basis: 70%;
@@ -399,7 +404,7 @@ header {
       &:before {
         color: #a61717;
         cursor: pointer;
-        content: 'Read more';
+        content: 'Прочети повече';
       }
 
       &:after {
@@ -425,11 +430,10 @@ header {
     }
 
     &:checked + label:before {
-      content: 'Read less';
+      content: 'Прочети по-малко';
     }
 
     &:checked + .read-more-label:after {
-      //content: url("../icons/arrow-down-solid.svg");
       content: '\f063';
     }
 

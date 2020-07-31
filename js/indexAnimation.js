@@ -95,7 +95,7 @@ async function indexAnimation()  {
     window.addEventListener('resize', actions.resetHeight);
 
     await actions.showNext();
-    c = setInterval(actions.showNext, 4000);
+    c = setInterval(actions.showNext, 9000);
 
     window.onresize = async () =>{
         await clearInterval(c);
@@ -109,6 +109,6 @@ async function indexAnimation()  {
         }
 
         await actions.showNext();
-        c = setInterval(actions.showNext, 4000);
+        c = setInterval(actions.showNext, 9000);
     }
 }
