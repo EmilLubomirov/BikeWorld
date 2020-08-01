@@ -2,8 +2,12 @@
 
 .loaded{
 
-  header li, .about-us figure{
+  header li {
     transform: translateY(0);
+  }
+
+  .about-us figure{
+    transform: translateX(0);
   }
 }
 
@@ -13,7 +17,11 @@ input.input-checkbox{
   display: none;
 
   &:checked + .site-header{
-    height: 550px;
+
+    @include bp(phone){
+      //height: 610px;
+      height: 550px;
+    }
 
     .nav > ul {
       display: flex;
@@ -207,15 +215,18 @@ header {
     border: 2px solid darkgray;
     border-radius: 5px;
     box-shadow:  0 0 10px 0 gray;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out,
+                opacity 0.7s ease-in;
+
+    opacity: 0;
 
     &:hover{
       cursor: pointer;
       transform: scale(1.05);
 
       > .info{
-        display: block;
-        transform: translateX(0);
+        visibility: visible;
+        transform: translateY(0);
         opacity: 1;
       }
 
@@ -226,9 +237,11 @@ header {
     }
 
     .info{
-      //display: none;
+      visibility: hidden;
       position: absolute;
-      transition: transform 1s ease-in-out, opacity 0.7s ease-in-out;
+      transition: transform 1s ease-in-out,
+                  opacity 0.7s ease-in-out,
+                  visibility 0.7s ease-in-out;
       transform: translateY(-100px);
       opacity: 0;
       font-weight: 600;
@@ -273,15 +286,17 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.84);
+  background-color: var(--background-color-secondary, #fff);
+  overflow: hidden;
 
   @include bp(tablet){
     font-size: 2.1vw;
   }
 
   & > figure{
-    transition: transform 1.5s linear;
-    transform: translateY(-500px);
+    transition: transform 1.7s linear;
+    //transform: translateY(-500px);
+    transform: translateX(-700px);
     flex-basis: 40%;
     margin-right: 0;
 
@@ -290,8 +305,9 @@ header {
     }
 
     @include bp(phone){
-      transition-duration: 2.3s;
-      transform: translateY(-900px);
+      //transition-duration: 2.3s;
+      //transform: translateY(-900px);
+      transform: translateX(-300px);
     }
   }
   img{
@@ -336,7 +352,7 @@ header {
 
 /*CONTACTS PAGE*/
 .contact-details{
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-secondary, #fff);
   padding: 30px;
   font-size: large;
 
@@ -352,7 +368,7 @@ header {
 /*FAQs PAGE*/
 .questions-wrapper{
 
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-secondary, #fff);
   max-width: 80%;
   margin: 0 auto;
   padding: 20px 0;
@@ -456,7 +472,7 @@ header {
 
   h4 {
     @include bp(phone){
-      font-size: 3.4vw;
+      font-size: 3.5vw;
     }
   }
 

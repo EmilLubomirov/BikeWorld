@@ -22,9 +22,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
+        const documentTitle = document.title;
 
-        if (document.title.startsWith('Начало')){
+        if (documentTitle.startsWith('Начало')){
             indexAnimation();
+        }
+
+        else if (documentTitle.startsWith('Планински') ||
+                 documentTitle.startsWith('Шосейни')){
+            scrollAnimation();
         }
     }
 </script>
@@ -88,6 +94,11 @@
                         Шосейни
                     </a>
                 </li>
+<!--                <li>-->
+<!--                    <a class="nav-links page-title-children" href="/BikeWorld/children">-->
+<!--                        Детски-->
+<!--                    </a>-->
+<!--                </li>-->
             </ul>
         </li>
             
@@ -143,7 +154,7 @@
         alt="our-team">
     </figure>
     <p>
-        Ние от <i>BikeWorld</i> се целим да удовлетворим нуждите на своите клиенти.
+        Ние от <i>Bike World</i> се целим да удовлетворим нуждите на своите клиенти.
         Излизайки на пазара през 2014, сме горди с това, което сме постигнали дотук и не спираме да се развиваме.
         За нас мнението на потребителите е от най - съществено значение.
         Тук можете да намерите велосипеда, който търсите, на едни от най - ниските цени на пазара,
@@ -190,10 +201,10 @@
 
                 <img src="../images/bikes-brands/logo-cube.gif"
                      alt="cube">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+            </figure>
+        </div>
+    </div>
+</div>
     </div>
 </main>
 

@@ -15,6 +15,8 @@
     <link rel="icon" href="/BikeWorld/images/site-logo.png">
 
     
+        <script src="/BikeWorld/js/scrollAnimation.js"></script>
+    
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 </head>
 
@@ -22,9 +24,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
+        const documentTitle = document.title;
 
-        if (document.title.startsWith('Начало')){
+        if (documentTitle.startsWith('Начало')){
             indexAnimation();
+        }
+
+        else if (documentTitle.startsWith('Планински') ||
+                 documentTitle.startsWith('Шосейни')){
+            scrollAnimation();
         }
     }
 </script>
@@ -88,6 +96,11 @@
                         Шосейни
                     </a>
                 </li>
+<!--                <li>-->
+<!--                    <a class="nav-links page-title-children" href="/BikeWorld/children">-->
+<!--                        Детски-->
+<!--                    </a>-->
+<!--                </li>-->
             </ul>
         </li>
             

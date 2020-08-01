@@ -18,6 +18,8 @@
 
     {% if page.title == 'Начало' %}
         <script src="{{site.baseurl}}/js/indexAnimation.js"></script>
+    {% elsif page.title == 'Планински' or page.title == 'Шосейни' %}
+        <script src="{{site.baseurl}}/js/scrollAnimation.js"></script>
     {% endif %}
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 </head>
@@ -26,9 +28,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
+        const documentTitle = document.title;
 
-        if (document.title.startsWith('Начало')){
+        if (documentTitle.startsWith('Начало')){
             indexAnimation();
+        }
+
+        else if (documentTitle.startsWith('Планински') ||
+                 documentTitle.startsWith('Шосейни')){
+            scrollAnimation();
         }
     }
 </script>

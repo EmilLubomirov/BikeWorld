@@ -22,9 +22,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
+        const documentTitle = document.title;
 
-        if (document.title.startsWith('Начало')){
+        if (documentTitle.startsWith('Начало')){
             indexAnimation();
+        }
+
+        else if (documentTitle.startsWith('Планински') ||
+                 documentTitle.startsWith('Шосейни')){
+            scrollAnimation();
         }
     }
 </script>
@@ -88,6 +94,11 @@
                         Шосейни
                     </a>
                 </li>
+<!--                <li>-->
+<!--                    <a class="nav-links page-title-children" href="/BikeWorld/children">-->
+<!--                        Детски-->
+<!--                    </a>-->
+<!--                </li>-->
             </ul>
         </li>
             

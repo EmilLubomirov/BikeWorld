@@ -24,6 +24,7 @@ label.input-checkbox-label{
   right: 50px;
   top: 50px;
   //width: 40%;
+  z-index: 1;
 
   @include bp(tablet){
     top: 140px;
@@ -99,14 +100,6 @@ ul > li.bicycles-item{
     max-width: fit-content;
   }
 
-  //@include bp(phone){
-  //
-  //  &:hover .site-header{
-  //    height: 520px;
-  //  }
-  //}
-
-
   ul {
     transition: max-height 1.5s ease-in-out;
     padding: 0 8px 0 20px;
@@ -121,27 +114,15 @@ ul > li.bicycles-item{
 
   &:hover{
     cursor: pointer;
-  }
 
-  &:hover > a{
-    transform: scale(1.1);
-  }
+    > a {
+      transform: scale(1.1);
+    }
 
-  &:hover > ul {
-    //opacity: 1;
-    max-height: 250px;
-    //display: block;
-    //flex-flow: column;
-    //align-items: center;
+    > ul {
+      max-height: 250px;
+    }
   }
-
-  //& > a:hover + ul{
-  //  opacity: 1;
-  //}
-  //
-  //& > a:hover &{
-  //
-  //}
 }
 
 .nav-links:before{
@@ -186,6 +167,15 @@ ul > li.bicycles-item{
   }
 }
 
-//.active{
-//  background-color: red;
+//.page-title-children{
+//  padding-bottom: 20px;
+//
+//  &:before{
+//    content: '\f1ae';
+//  }
+//}
+
+//.active + a{
+//  padding-bottom: 10px;
+//  border-bottom: 2px solid white;
 //}
