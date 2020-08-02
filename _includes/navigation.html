@@ -23,14 +23,16 @@
                         Шосейни
                     </a>
                 </li>
-<!--                <li>-->
-<!--                    <a class="nav-links page-title-children" href="{{site.baseurl}}/children">-->
-<!--                        Детски-->
-<!--                    </a>-->
-<!--                </li>-->
+                <li>
+                    <a class="nav-links page-title-urban" href="{{site.baseurl}}/urban">
+                        Градски
+                    </a>
+                </li>
             </ul>
         </li>
-            {% elsif current-page.title != 'Планински' and current-page.title != "Шосейни" %}
+            {% elsif current-page.title != 'Планински'
+                     and current-page.title != 'Шосейни'
+                     and current-page.title != 'Градски' %}
         <li>
             <a class="nav-links page-title-{{ current-page.title-en | slugify }}
                                         {%if current-page.url == page.url %}active{% endif %}"

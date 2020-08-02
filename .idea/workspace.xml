@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bicycles.html" afterDir="false" />
@@ -15,8 +14,13 @@
       <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/indexAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/indexAnimation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/indexAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/indexAnimation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/road.html" beforeDir="false" afterPath="$PROJECT_DIR$/road.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +46,9 @@
       <list>
         <option value="package.json" />
         <option value="Sass File" />
-        <option value="HTML File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,11 +73,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\css-advanced-project\bike-world\images" />
+      <recent name="C:\css-advanced-project\bike-world\images\bikes-urban" />
       <recent name="C:\css-advanced-project\bike-world\images\bikes-mountain" />
       <recent name="C:\css-advanced-project\bike-world\images\partners" />
       <recent name="C:\css-advanced-project\bike-world\images\bikes-brands" />
-      <recent name="C:\css-advanced-project\bike-world\images" />
-      <recent name="C:\css-advanced-project\bike-world\images\bikes-road" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -126,7 +130,8 @@
       <workItem from="1596043347113" duration="9972000" />
       <workItem from="1596096394720" duration="6264000" />
       <workItem from="1596205019863" duration="4657000" />
-      <workItem from="1596272084934" duration="12744000" />
+      <workItem from="1596272084934" duration="12792000" />
+      <workItem from="1596360091505" duration="11485000" />
     </task>
     <servers />
   </component>
@@ -134,14 +139,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595527255405">
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596372452897">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1595527255405" />
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596272157599">
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1596372452897" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596360093162">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596272157599" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596360093162" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

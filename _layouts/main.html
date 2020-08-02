@@ -18,7 +18,7 @@
 
     {% if page.title == 'Начало' %}
         <script src="{{site.baseurl}}/js/indexAnimation.js"></script>
-    {% elsif page.title == 'Планински' or page.title == 'Шосейни' %}
+    {% elsif page.topic == 'bicycles' %}
         <script src="{{site.baseurl}}/js/scrollAnimation.js"></script>
     {% endif %}
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
@@ -35,7 +35,8 @@
         }
 
         else if (documentTitle.startsWith('Планински') ||
-                 documentTitle.startsWith('Шосейни')){
+                 documentTitle.startsWith('Шосейни') ||
+                 documentTitle.startsWith('Градски')) {
             scrollAnimation();
         }
     }
@@ -50,7 +51,10 @@
 </header>
 
 <main class="site-main">
-    {% if page.title and page.title != 'Начало' and page.title != 'Планински' and page.title != 'Шосейни' %}
+    {% if page.title and page.title != 'Начало'
+                     and page.title != 'Планински'
+                     and page.title != 'Шосейни'
+                     and page.title != 'Градски' %}
     <h1 class="page-title">{{page.title}}</h1>
     {% endif %}
     <div class="page-content">

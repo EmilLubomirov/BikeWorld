@@ -32,7 +32,7 @@ label.input-checkbox-label{
   }
 
   @include bp(phone){
-    top: 130px;
+    top: 120px;
     left: 33%;
   }
 
@@ -101,7 +101,7 @@ ul > li.bicycles-item{
   }
 
   ul {
-    transition: max-height 1.5s ease-in-out;
+    transition: max-height 1.4s ease-in-out;
     padding: 0 8px 0 20px;
     max-height: 0;
     overflow: hidden;
@@ -160,20 +160,19 @@ ul > li.bicycles-item{
   content: '\f1bb';
 }
 .page-title-road{
-  padding-bottom: 20px;
 
   &:before{
     content: '\f018';
   }
 }
 
-//.page-title-children{
-//  padding-bottom: 20px;
-//
-//  &:before{
-//    content: '\f1ae';
-//  }
-//}
+.page-title-urban{
+  padding-bottom: 20px;
+
+  &:before{
+    content: '\f1ad';
+  }
+}
 
 //.active + a{
 //  padding-bottom: 10px;
