@@ -42,39 +42,39 @@ input.input-checkbox{
   }
 }
 
-.page-header h1 {
-  //color: bisque;
-  max-width: 70%;
-  margin: 0 auto;
-  background: #fff5dc;
-  padding: 5px 0;
-  box-shadow: 0 0 7px 0 #000;
-  //border: 1px solid;
-  border-radius: 20px;
-  text-align: center;
+.page-title {
+  @include bp(phone){
+    color: var(--background-color-secondary);
+  }
 }
 
 .site-main{
-
   padding: 40px;
 
   .page-content{
     height: 100%;
-
-    //& > h1{
-    //  color: var(--nav-color, #fff);
-    //}
   }
 
   /*THIS IS JUST INITIAL MOCKING VALUE*/
-  .images{
-    height: 800px;
+  .index-images{
+    height: 600px;
+
+    @include bp(desktop){
+      height: 500px;
+    }
+
+    @include bp(mobile){
+      height: 280px;
+    }
+
+    @include bp(tablet){
+      height: 230px;
+    }
   }
 }
 
 
 /*HEADER*/
-
 header {
   display: flex;
   font-size: var(--header-font-size);
@@ -88,8 +88,8 @@ header {
   }
 
   .site-logo {
-
     position: absolute;
+    z-index: 1;
     top: 4vh;
     left: 30px;
     display: inline-block;
@@ -105,28 +105,9 @@ header {
       left: 35%;
     }
 
-    //position: relative;
-
     img {
       height: 100%;
-
-      //@include bp(phone){
-      //  height: 20%;
-      //}
     }
-
-    //  a {
-    //    position: absolute;
-    //    top: 13px;
-    //    left: 30px;
-    //    display: inline-block;
-    //    height: 8vw;
-    //
-    //    @include bp(phone){
-    //      height: 30%;
-    //    }
-    //  }
-    //}
   }
 }
 
@@ -154,15 +135,7 @@ header {
     margin: 0 8px;
   }
 
-  //.backward:before{
-  //  content: '\f060';
-  //}
-  //
-  //.forward:before{
-  //  content: '\f061';
-  //}
-
-  .images{
+  .index-images{
     position: relative;
     width: 100%;
   }
@@ -171,7 +144,6 @@ header {
     transition: transform 2s linear;
     position: absolute;
     transform: translateX(-1500px);
-    //max-width: 100%;
     margin: 0;
 
     @include bp(tablet){
@@ -184,6 +156,7 @@ header {
   }
   img{
     max-width: 100%;
+    display: block;
   }
 }
 
@@ -304,7 +277,6 @@ header {
 
   & > figure{
     transition: transform 1.7s linear;
-    //transform: translateY(-500px);
     transform: translateX(-700px);
     flex-basis: 40%;
     margin-right: 0;
@@ -314,8 +286,6 @@ header {
     }
 
     @include bp(phone){
-      //transition-duration: 2.3s;
-      //transform: translateY(-900px);
       transform: translateX(-300px);
     }
   }
@@ -410,10 +380,6 @@ header {
     overflow: hidden;
     transition: opacity 1s ease-in,
                 max-height 1s 0.2s ease-in;
-
-    //li, p {
-    //  display: none;
-    //}
   }
 
   .read-more {
@@ -448,10 +414,6 @@ header {
       max-height: 100%;
       transition: opacity 1.2s 0.1s ease-in,
                   max-height 1s ease-in;
-
-      //li, p {
-      //  display: block;
-      //}
     }
 
     &:checked + label:before {
@@ -562,13 +524,7 @@ header {
 
     a:before{
       font-family: "Font Awesome 5 Brands", serif;
-      //font-weight: 900;
-      //margin: 0 8px;
     }
-
-    //.fb{
-    //  margin: 0;
-    //}
   }
 
   .contacts{
@@ -618,29 +574,15 @@ header {
   }
 }
 
-//.fb:before, .instagram:before, .twitter:before{
-//  display: inline-block;
-//  position: relative;
-//  top: 4px;
-//}
-
 
 .fb:before {
   content: '\f09a';
-  //width: 10px;
-  //content: url("../icons/facebook.svg");
 }
 
 .instagram:before{
   content: '\f16d';
-  //content: '';
-  //width: 20px;
-  //height: 20px;
-  //background: url("../icons/instagram-sketched.svg");
 }
 
 .twitter:before{
   content: '\f081';
-  //width: 20px;
-  //content: url("../icons/twitter.svg");
 }

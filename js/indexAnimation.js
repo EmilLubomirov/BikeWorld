@@ -35,10 +35,15 @@ async function indexAnimation()  {
             const deviceType = helperFunctions.getDeviceType(screenWidth);
             return devicePositions[deviceType];
         },
+
+        removeElementPadding: (elem) =>{
+            elem.style.padding = '0';
+        }
     };
 
     const elements = {
-        imageParent: document.querySelector('.index-banner .images'),
+        imageParent: document.querySelector('.index-banner .index-images'),
+        mainSection: document.querySelector('.site-main'),
     };
 
     let c = 0;
@@ -93,6 +98,7 @@ async function indexAnimation()  {
         }
     };
 
+    helperFunctions.removeElementPadding(elements.mainSection);
     actions.resetHeight();
     window.addEventListener('resize', actions.resetHeight);
 

@@ -8,10 +8,8 @@ label.input-checkbox-label{
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
     margin: 0 8px;
-    //display: none;
 
     @include bp(phone){
-      //display: block;
       content: '\f0c9';
       color: #fff;
     }
@@ -23,7 +21,6 @@ label.input-checkbox-label{
   position: absolute;
   right: 50px;
   top: 50px;
-  //width: 40%;
   z-index: 1;
 
   @include bp(tablet){
@@ -79,12 +76,10 @@ label.input-checkbox-label{
     color: var(--nav-color);
     text-decoration: none;
     display: inline-block;
-    //padding: 10px;
     transition: transform 0.6s ease-in-out,
                 background-color 0.5s ease-in-out;
 
     &:hover{
-      //background: #ffc89a;
       transform: scale(1.15);
       border-radius: 5px;
 
@@ -129,16 +124,7 @@ ul > li.bicycles-item{
   font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
   margin: 0 8px;
-  //display: inline-block;
-  //width: 15px;
-  //margin: 0 10px;
-  //color: white;
 }
-
-//.page-title-bicycles:hover > ul{
-//
-//  opacity: 1;
-//}
 
 .page-title-bicycles:before{
   content: '\f206';
@@ -173,8 +159,3 @@ ul > li.bicycles-item{
     content: '\f1ad';
   }
 }
-
-//.active + a{
-//  padding-bottom: 10px;
-//  border-bottom: 2px solid white;
-//}
