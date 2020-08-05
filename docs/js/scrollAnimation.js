@@ -22,5 +22,4 @@ function scrollAnimation() {
     prevViewportHeight = viewportHeight;
 }
 
-scrollAnimation();
 window.addEventListener('scroll', scrollAnimation);

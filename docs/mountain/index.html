@@ -24,15 +24,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
-        const documentTitle = document.title;
 
-        if (documentTitle.startsWith('Начало')){
+        const documentTitle = document.title;
+        const bicyclePageTitles = ['Планински', 'Шосейни', 'Градски'];
+
+        if (documentTitle.startsWith('Начало')) {
             indexAnimation();
         }
 
-        else if (documentTitle.startsWith('Планински') ||
-                 documentTitle.startsWith('Шосейни') ||
-                 documentTitle.startsWith('Градски')) {
+        else if (bicyclePageTitles.find(elem => documentTitle.startsWith(elem))) {
             scrollAnimation();
         }
     }
@@ -153,7 +153,7 @@
     <div class="page-content">
         <h1 class="page-title">Планински велосипеди</h1>
 
-<div class="page-main">
+<div class="bikes-page-main">
     <section class="bikes-collection">
         <article class="bike">
             <h3>Sprint Tornado 29"</h3>
@@ -442,7 +442,7 @@
                 <p>Дерайльори: SHIMANO</p>
                 <p>Цвят: Жълт / Зелен</p>
             </div>
-            <p class="price"><span>429.99</span> 389.00 лв.</p>
+            <p class="price"><span>429.99 лв.</span> 389.00 лв.</p>
         </article>
     </section>
 </div>
@@ -519,7 +519,9 @@
         </ul>
     </div>
     <span>
-        Всички права запазени 2020 &copy;
+
+        Всички права запазени
+            <script>document.write(new Date().getFullYear())</script> &copy;
     </span>
 </footer>
 </body>

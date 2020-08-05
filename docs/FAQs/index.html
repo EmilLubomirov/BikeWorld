@@ -22,15 +22,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
-        const documentTitle = document.title;
 
-        if (documentTitle.startsWith('Начало')){
+        const documentTitle = document.title;
+        const bicyclePageTitles = ['Планински', 'Шосейни', 'Градски'];
+
+        if (documentTitle.startsWith('Начало')) {
             indexAnimation();
         }
 
-        else if (documentTitle.startsWith('Планински') ||
-                 documentTitle.startsWith('Шосейни') ||
-                 documentTitle.startsWith('Градски')) {
+        else if (bicyclePageTitles.find(elem => documentTitle.startsWith(elem))) {
             scrollAnimation();
         }
     }
@@ -186,7 +186,7 @@
 
         <li>
             <p>Въпрос: Как да разбера кой е правилният велосипед, който трябва да си закупя?</p>
-            <p>Отговор: Зависи от много неща - не само от физическите Ви характеристики, но и от експлоатационния характер
+            <p>Отговор: Зависи не само от физическите Ви характеристики, но и от експлоатационния характер
                 на дадения велосипед. Можете да се обадите на нашия телефон или да ни пишете на e-mail адрес за да Ви помогнем с избора.
             </p>
         </li>
@@ -285,7 +285,9 @@
         </ul>
     </div>
     <span>
-        Всички права запазени 2020 &copy;
+
+        Всички права запазени
+            <script>document.write(new Date().getFullYear())</script> &copy;
     </span>
 </footer>
 </body>

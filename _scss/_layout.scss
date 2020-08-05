@@ -1,5 +1,8 @@
-.loaded{
+$site-name-color: dodgerblue;
+$read-label-color: #a61717;
 
+/*ANIMATION*/
+.loaded{
   header li {
     transform: translateY(0);
   }
@@ -9,6 +12,7 @@
   }
 }
 
+/*RESPONSIVE HEADER*/
 input.input-checkbox{
   position: absolute;
   pointer-events: none;
@@ -113,27 +117,10 @@ header {
 
 /*INDEX PAGE*/
 .index-banner{
-
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
-
-  .backward, .forward{
-    &:hover{
-      cursor: pointer;
-    }
-  }
-
-  .backward, .forward{
-    cursor: pointer;
-  }
-
-  .backward:before, .forward:before{
-    font-family: "Font Awesome 5 Free", serif;
-    font-weight: 900;
-    margin: 0 8px;
-  }
 
   .index-images{
     position: relative;
@@ -161,7 +148,7 @@ header {
 }
 
 /*BIKES PAGE*/
-.page-main{
+.bikes-page-main{
   margin-top: 70px;
 }
 
@@ -196,10 +183,9 @@ header {
     background: #fff;
     border: 2px solid darkgray;
     border-radius: 5px;
-    box-shadow:  0 0 10px 0 gray;
+    box-shadow:  0 0 15px 0 gray;
     transition: transform 0.5s ease-in-out,
                 opacity 0.7s ease-in;
-
     opacity: 0;
 
     &:hover{
@@ -222,8 +208,8 @@ header {
       visibility: hidden;
       position: absolute;
       transition: transform 1s ease-in-out,
-                  opacity 0.7s ease-in-out,
-                  visibility 0.7s ease-in-out;
+      opacity 0.7s ease-in-out,
+      visibility 0.7s ease-in-out;
       transform: translateY(-100px);
       opacity: 0;
       font-weight: 600;
@@ -240,19 +226,19 @@ header {
       }
     }
 
+    & h3, .price{
+      background-color: var(--bike-card-color, aquamarine);
+    }
+
     .price{
       font-size: larger;
       font-weight: 600;
-      color: red;
+      color: var(--bike-card-price-color, red);
 
       span{
         text-decoration: line-through;
         margin-right: 10px;
       }
-    }
-
-    & h3, .price{
-      background-color: var(--bike-card-color, aquamarine);
     }
 
     & h3{
@@ -298,12 +284,11 @@ header {
     line-height: 1.5;
     font-weight: bolder;
     font-size: large;
-    //color: #fff;
     flex-basis: 40%;
 
     i{
       font-size: larger;
-      color: dodgerblue;
+      color: $site-name-color;
     }
 
     @include bp(tablet){
@@ -393,7 +378,7 @@ header {
       font-size: larger;
 
       &:before {
-        color: #a61717;
+        color: $read-label-color;
         cursor: pointer;
         content: 'Прочети повече';
       }
@@ -476,6 +461,7 @@ header {
 
     h4 {
       text-align: center;
+      margin-bottom: 30px;
     }
 
     img {
@@ -525,6 +511,18 @@ header {
     a:before{
       font-family: "Font Awesome 5 Brands", serif;
     }
+
+    .fb:before {
+      content: '\f09a';
+    }
+
+    .instagram:before{
+      content: '\f16d';
+    }
+
+    .twitter:before{
+      content: '\f081';
+    }
   }
 
   .contacts{
@@ -532,7 +530,7 @@ header {
     justify-content: space-between;
   }
 
-  .contacts > ul{
+  .contacts > ul {
     flex-flow: column wrap;
     margin-top: 40px;
     height: 40%;
@@ -540,13 +538,29 @@ header {
     font-size: large;
 
     a {
-      @include bp(phone){
+      @include bp(phone) {
         font-size: 3.3vw;
       }
 
-      &:before{
+      &:before {
         font-family: "Font Awesome 5 Free", serif;
       }
+    }
+
+    .email, .phone{
+      display: block;
+    }
+
+    .email{
+      margin-bottom: 20px;
+
+      &:before{
+        content: '\f199';
+      }
+    }
+
+    .phone:before{
+      content: '\f095';
     }
   }
 
@@ -554,35 +568,7 @@ header {
     flex: 0 1 100%;
     text-align: center;
     font-size: larger;
-    margin-top: 30px;
+    font-weight: bold;
+    margin-top: 50px;
   }
-
-  .email, .phone{
-    display: block;
-  }
-
-  .email{
-    margin-bottom: 20px;
-
-    &:before{
-      content: '\f199';
-    }
-  }
-
-  .phone:before{
-    content: '\f095';
-  }
-}
-
-
-.fb:before {
-  content: '\f09a';
-}
-
-.instagram:before{
-  content: '\f16d';
-}
-
-.twitter:before{
-  content: '\f081';
 }

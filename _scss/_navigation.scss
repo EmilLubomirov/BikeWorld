@@ -1,5 +1,6 @@
 $delay: 0.15s;
 
+/*MENU FOR PHONE USERS*/
 label.input-checkbox-label{
   margin: 25px 0 0 25px;
   height: fit-content;
@@ -16,6 +17,7 @@ label.input-checkbox-label{
   }
 }
 
+/*NAV*/
 .nav {
 
   position: absolute;
@@ -73,7 +75,7 @@ label.input-checkbox-label{
   }
 
   a {
-    color: var(--nav-color);
+    color: var(--nav-color, #fff);
     text-decoration: none;
     display: inline-block;
     transition: transform 0.6s ease-in-out,
@@ -82,80 +84,75 @@ label.input-checkbox-label{
     &:hover{
       transform: scale(1.15);
       border-radius: 5px;
-
-    }
-  }
-}
-
-ul > li.bicycles-item{
-
-  margin-right: 0;
-
-  @include bp(phone){
-    max-width: fit-content;
-  }
-
-  ul {
-    transition: max-height 1.4s ease-in-out;
-    padding: 0 8px 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    background-color: var(--background-color-main, lightskyblue);
-
-    li {
-      margin-top: 30px;
     }
   }
 
-  &:hover{
-    cursor: pointer;
+  ul > li.bicycles-item{
+    margin-right: 0;
 
-    > a {
-      transform: scale(1.1);
+    @include bp(phone){
+      max-width: fit-content;
     }
 
-    > ul {
-      max-height: 250px;
+    ul {
+      transition: max-height 1.4s ease-in-out;
+      padding: 0 8px 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: var(--background-color-main, lightskyblue);
+
+      li {
+        margin-top: 30px;
+      }
+    }
+
+    &:hover{
+      cursor: pointer;
+
+      > a {
+        transform: scale(1.1);
+      }
+
+      > ul {
+        max-height: 250px;
+      }
     }
   }
-}
 
-.nav-links:before{
-  font-family: "Font Awesome 5 Free", serif;
-  font-weight: 900;
-  margin: 0 8px;
-}
+  .nav-links:before{
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    margin: 0 8px;
+  }
 
-.page-title-bicycles:before{
-  content: '\f206';
-}
+  .page-title-bicycles:before{
+    content: '\f206';
+  }
 
-.page-title-about:before{
-  content: '\f2bb';
-}
+  .page-title-about:before{
+    content: '\f2bb';
+  }
 
-.page-title-contacts:before{
-  content: '\f2a0';
-}
+  .page-title-contacts:before{
+    content: '\f2a0';
+  }
 
-.page-title-faqs:before{
-  content: '\f128';
-}
+  .page-title-faqs:before{
+    content: '\f128';
+  }
 
-.page-title-mountain:before{
-  content: '\f1bb';
-}
-.page-title-road{
-
-  &:before{
+  .page-title-mountain:before{
+    content: '\f1bb';
+  }
+  .page-title-road:before{
     content: '\f018';
   }
-}
 
-.page-title-urban{
-  padding-bottom: 20px;
+  .page-title-urban{
+    padding-bottom: 20px;
 
-  &:before{
-    content: '\f1ad';
+    &:before{
+      content: '\f1ad';
+    }
   }
 }

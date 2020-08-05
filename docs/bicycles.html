@@ -22,15 +22,15 @@
 
     window.onload = () =>{
         document.querySelector('body').classList.add('loaded');
-        const documentTitle = document.title;
 
-        if (documentTitle.startsWith('Начало')){
+        const documentTitle = document.title;
+        const bicyclePageTitles = ['Планински', 'Шосейни', 'Градски'];
+
+        if (documentTitle.startsWith('Начало')) {
             indexAnimation();
         }
 
-        else if (documentTitle.startsWith('Планински') ||
-                 documentTitle.startsWith('Шосейни') ||
-                 documentTitle.startsWith('Градски')) {
+        else if (bicyclePageTitles.find(elem => documentTitle.startsWith(elem))) {
             scrollAnimation();
         }
     }
@@ -151,7 +151,7 @@
     <h1 class="page-title">Велосипеди</h1>
     
     <div class="page-content">
-        <h1>Bikes page</h1>
+        
     </div>
 </main>
 
@@ -225,7 +225,9 @@
         </ul>
     </div>
     <span>
-        Всички права запазени 2020 &copy;
+
+        Всички права запазени
+            <script>document.write(new Date().getFullYear())</script> &copy;
     </span>
 </footer>
 </body>
