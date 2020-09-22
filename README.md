@@ -7,7 +7,7 @@ three main categories:
 - Road
 - Urban
 
-#####Setup:
+##### Setup:
 1. `npm install` - to install all dependencies
 2. `gulp` - to start the server locally
 3. `open localhost:3000` 
