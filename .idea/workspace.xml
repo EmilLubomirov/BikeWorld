@@ -3,28 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac0a5d4-339b-43e0-b7e7-48ab1b186c5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/bicycles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FAQs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FAQs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/bicycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bicycles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contacts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/scrollAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/scrollAnimation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/mountain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mountain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/road/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/road/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/urban/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/urban/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/faqs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scrollAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scrollAnimation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mountain.html" beforeDir="false" afterPath="$PROJECT_DIR$/mountain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/road.html" beforeDir="false" afterPath="$PROJECT_DIR$/road.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urban.html" beforeDir="false" afterPath="$PROJECT_DIR$/urban.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +124,9 @@
       <workItem from="1596272084934" duration="12792000" />
       <workItem from="1596360091505" duration="11574000" />
       <workItem from="1596455597351" duration="7202000" />
-      <workItem from="1596616675213" duration="7403000" />
+      <workItem from="1596616675213" duration="7458000" />
+      <workItem from="1596713802395" duration="16000" />
+      <workItem from="1600766608562" duration="1320000" />
     </task>
     <servers />
   </component>
@@ -149,10 +138,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1596372452897" />
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596616674263">
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1596713801657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596616674263" />
+    <state x="349" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1596713801657" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595011076044">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
