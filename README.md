@@ -12,3 +12,6 @@ three main categories:
 2. `gulp` - to start the server locally
 3. `open localhost:3000` 
   
+  ##### You can also find the app on the Internet by clicking [here](https://emillubomirov.github.io/BikeWorld/).
+    
+    
